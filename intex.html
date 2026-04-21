@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Day Stall | Riverside Christian College</title>
+    <style>
+        @import url('https://googleapis.com');
+        
+        :root {
+            --rcc-navy: #1a3a5f;
+            --rcc-green: #78be20;
+            --md-rose: #db2777;
+            --md-cream: #fdfaf6;
+            --md-gold: #b38b67;
+        }
+
+        body { font-family: 'Montserrat', sans-serif; margin: 0; background: var(--md-cream); color: var(--rcc-navy); }
+
+        /* Riverside Official Header */
+        header {
+            background: var(--rcc-navy); color: white; padding: 20px 10%;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 5px solid var(--rcc-green);
+        }
+        .logo { font-weight: 800; font-size: 1.2rem; letter-spacing: 1px; }
+        .logo span { color: var(--rcc-green); }
+
+        /* Mother's Day Hero */
+        .hero {
+            text-align: center; padding: 80px 20px;
+            background: linear-gradient(rgba(253, 250, 246, 0.8), rgba(253, 250, 246, 0.8)), 
+                        url('https://unsplash.com');
+            background-size: cover; background-attachment: fixed;
+        }
+        .hero h1 { 
+            font-family: 'Playfair Display', serif; font-size: 4rem; 
+            margin: 0; color: var(--rcc-navy); font-style: italic;
+        }
+        .hero p { 
+            font-size: 1.1rem; color: var(--md-rose); font-weight: 700; 
+            text-transform: uppercase; letter-spacing: 3px; margin-top: 10px;
+        }
+
+        /* Content Container */
+        .container { max-width: 1000px; margin: -40px auto 60px; padding: 0 20px; }
+        
+        /* Pricing Banner */
+        .price-banner {
+            background: white; border-radius: 15px; padding: 40px; text-align: center;
+            box-shadow: 0 10px 30px rgba(26, 58, 95, 0.1);
+            border: 2px solid var(--rcc-green);
+        }
+        .price-banner h2 { 
+            font-family: 'Playfair Display', serif; font-size: 3rem; 
+            margin: 0; color: var(--rcc-navy); 
+        }
+        .price-banner .subtext { color: var(--md-gold); font-weight: 600; margin-top: 5px; }
+
+        /* Info Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        
+        .card {
+            background: white; padding: 40px; border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 8px solid var(--rcc-navy);
+            transition: 0.3s ease;
+        }
+        .card:hover { transform: translateY(-10px); border-top-color: var(--md-rose); }
+        .card h3 { color: var(--rcc-navy); font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-top: 0; }
+        .card p { line-height: 1.6; color: #555; }
+        .card .badge { 
+            display: inline-block; background: var(--md-cream); color: var(--md-gold);
+            padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 15px;
+        }
+
+        /* College Values Bar */
+        .values-bar {
+            background: var(--rcc-green); color: var(--rcc-navy);
+            padding: 15px; text-align: center; font-weight: 800; font-size: 0.8rem;
+            letter-spacing: 2px; text-transform: uppercase;
+        }
+
+        /* Footer */
+        footer { background: var(--rcc-navy); color: white; padding: 60px 10%; text-align: center; }
+        .loc { color: var(--rcc-green); font-weight: 800; font-size: 1.2rem; margin-bottom: 10px; display: block; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RIVERSIDE <span>CHRISTIAN COLLEGE</span></div>
+        <div style="font-size: 0.8rem; font-weight: 700; opacity: 0.8;">EST. 1983</div>
+    </header>
+
+    <section class="hero">
+        <h1>Mother's Day Boutique</h1>
+        <p>Honouring the Women of our Community</p>
+    </section>
+
+    <div class="container">
+        <div class="price-banner">
+            <div class="subtext">CURATED GIFTS RANGING FROM</div>
+            <h2>$2.00 — $20.00+</h2>
+            <div class="subtext">THE RIVERSIDE WAY</div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <span class="badge">JUNIOR COLLEGE</span>
+                <h3>Classroom Bookings</h3>
+                <p>To ensure a wonderful experience for our younger students, please book a shopping appointment through your <strong>Classroom Teacher</strong>.</p>
+            </div>
+            <div class="card">
+                <span class="badge">MIDDLE & SENIOR</span>
+                <h3>Lunchbreak Access</h3>
+                <p>Open for all Middle and Senior students during scheduled <strong>Lunchbreaks</strong>. Find a gift that reflects your appreciation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="values-bar">
+        Excellence • Teamwork • Respect • Faith • Community
+    </div>
+
+    <footer>
+        <span class="loc">📍 COLLEGE LIBRARY STALL</span>
+        <div>23 Royle Street, Maryborough West QLD 4650</div>
+        <div style="margin-top: 30px; opacity: 0.5; font-size: 0.7rem;">
+            © 2026 Riverside Christian College. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
